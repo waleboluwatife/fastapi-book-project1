@@ -20,7 +20,7 @@ jobs:
         username: ubuntu
         key: ${{ secrets.AWS_PRIVATE_KEY }}
         script: |
-          d /home/ubuntu/
+          cd /home/ubuntu/
             git clone <your-github-repo>
             cd fastapi-book-project1/
             git fetch origin main
