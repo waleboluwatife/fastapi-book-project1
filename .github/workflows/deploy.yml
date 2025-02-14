@@ -21,7 +21,7 @@ jobs:
         key: ${{ secrets.AWS_PRIVATE_KEY }}
         script: |
           cd /home/ubuntu/
-            git clone <your-github-repo>
+            git clone https://github.com/waleboluwatife/fastapi-book-project1.git
             cd fastapi-book-project1/
             git fetch origin main
             git reset --hard origin/main
