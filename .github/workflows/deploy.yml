@@ -20,10 +20,9 @@ jobs:
         username: ubuntu
         key: ${{ secrets.AWS_PRIVATE_KEY }}
         script: |
-          cd /home/ubuntu/fastapi-book-project
-          git pull origin main
-          docker stop fastapi || true
-          docker rm fastapi || true
-          docker build -t fastapi-app .
-          docker run -d -p 8080:8000 --name fastapi fastapi-app
-          sudo systemctl restart nginx
+          d /home/ubuntu/
+            git clone <your-github-repo>
+            cd fastapi-book-project1/
+            git fetch origin main
+            git reset --hard origin/main
+            docker-compose up -d --build
